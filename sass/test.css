@@ -1,0 +1,41 @@
+/* line 26, test.scss */
+body {
+  background: #eee;
+}
+
+/* line 17, test.scss */
+.blog a {
+  color: green;
+}
+/* line 19, test.scss */
+.blog a:hover {
+  color: blue;
+}
+/* line 34, test.scss */
+.blog > h1 {
+  color: red;
+  border: 1px solid blue;
+}
+/* line 40, test.scss */
+html.csscolumns .blog entry p {
+  font-size: 20px;
+  color: blue;
+}
+/* line 45, test.scss */
+.blog entry p {
+  font-size: 12px;
+  margin: 20px;
+}
+/* line 48, test.scss */
+html.csscolumns .blog entry p {
+  column-count: 2;
+  column-gap: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+/* line 10, test.scss */
+html.csscolumns .blog entry p a {
+  color: #cccccc;
+}

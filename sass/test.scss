@@ -1,0 +1,60 @@
+@import "compass/utilities";
+@import "compass/typography";
+@import "compass/css3";
+
+$blue: blue;
+@mixin roundy ($radius, $color){
+    border-radius: $radius;
+    border-top-right-radius:$radius * 2;
+    border-bottom-left-radius:$radius * 2;
+    a{
+        color:$color;
+    }
+
+}
+
+@mixin green_links {
+    a {
+        color:green;
+        &:hover {
+            color:$blue;
+        }
+    
+    }
+}
+
+body {
+    background:#eee;
+}
+
+.blog {
+    
+    @include green_links;
+    
+    > h1 {
+    color:red;
+    border:1px solid $blue;
+    }
+    entry {
+
+    %h1 {
+        font-size:20px;
+        color:$blue;
+    }
+    
+    p {
+        font-size:12px;
+        margin:20px;
+        html.csscolumns & {
+            column-count:2;
+            column-gap:10px;
+            margin:10px;
+            @include roundy(4px,#ccc);
+            @extend %h1;
+        
+        }
+    
+    }
+
+}
+}
