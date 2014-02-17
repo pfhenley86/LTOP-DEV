@@ -1,0 +1,25 @@
+name = Integrious Solutions
+description = A simple theme that implements bootstrap into drupal with Spot from BlackTie.co.
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/font-awesome.min.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/media-queries.css
+
+scripts[] = js/bootstrap.min.js
+scripts[] = js/Chart.js
+scripts[] = js/script.js
+
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+regions[features_one]   = Features One
+regions[features_two]   = Features Two
+regions[features_three] = Features Three
+regions[associations]	= Associations
+regions[sidebar_first]  = First Sidebar
+regions[footer]         = Footer
